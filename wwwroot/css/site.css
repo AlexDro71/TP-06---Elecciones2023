@@ -19,3 +19,40 @@ footer {
   bottom: 0; 
   margin: 10px 0px 20px 0px;
 }
+
+.index{
+  align-items: center;
+}
+
+.hojaCañete {
+  background-color: #5e5757;
+  width: 400px;
+  padding: 20px;
+}
+
+.hojaCañete h2{
+  text-align: center;
+
+}
+
+.hojaBinker {
+  background-color: #5e5757;
+  width: 400px;
+  padding: 20px;
+}
+
+.hojaBinker h2{
+  text-align: center;
+
+}
+
+.hojaPablo {
+  background-color: #5e5757;
+  width: 400px;
+  padding: 20px;
+}
+
+.hojaPablo h2{
+  text-align: center;
+
+}
