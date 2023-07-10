@@ -24,10 +24,53 @@ footer {
   align-items: center;
 }
 
+.barraNavegar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  border: 2px solid #000000;
+  background-color: white;
+}
+
+.barraNavegar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.barraNavegar li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 40px;
+  font-size: 25px;
+}
+
+.barraNavegar li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.barraNavegar img{
+  width: 80px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+
+.hojas{
+  display: flex;
+  justify-content: space-between;
+}
+
 .hojaCañete {
-  background-color: #5e5757;
-  width: 400px;
-  padding: 20px;
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  border: 2px solid #000000;
 }
 
 .hojaCañete h2{
@@ -36,9 +79,10 @@ footer {
 }
 
 .hojaBinker {
-  background-color: #5e5757;
-  width: 400px;
-  padding: 20px;
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  border: 2px solid #000000;
 }
 
 .hojaBinker h2{
@@ -47,12 +91,25 @@ footer {
 }
 
 .hojaPablo {
-  background-color: #5e5757;
-  width: 400px;
-  padding: 20px;
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  border: 2px solid #000000;
 }
 
 .hojaPablo h2{
+  text-align: center;
+
+}
+
+.hojaFede {
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  border: 2px solid #000000;
+}
+
+.hojaFede h2{
   text-align: center;
 
 }
