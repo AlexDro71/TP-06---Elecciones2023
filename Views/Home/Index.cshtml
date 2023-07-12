@@ -10,8 +10,7 @@
     
     <nav class="barraNavegar">
         <ul>
-            <img src="../img/Bandera.png}
-            >
+            <img src="../img/Bandera.png">
             <li><a href="VerDetalleCandidato.cshtml">Elecciones 2023</a></li>
             <li><a href="">Creditos</a></li>
         </ul>
@@ -19,34 +18,16 @@
 
     <h1>Elecciones 2023</h1>
 
-    <div class="hojas">
-        <div class="hojaCañete">
-            <h2>Juntos por Cañete</h2>
-            <img src="">
-            <p></p>
-            <a href='@Url.Action("VerDetallePartido")'><button type="button">Ver Detalles</button></a>
-        </div>
-
-        <div class="hojaBinker">
-            <h2>Zurbanismo</h2>
-            <img src="">
-            <p></p>
-            <a href='@Url.Action("VerDetallePartido")'><button type="button">Ver Detalles</button></a>
-        </div>
-
-        <div class="hojaPablo">
-            <h2></h2>
-            <img src="">
-            <p></p>
-            <a href='@Url.Action("VerDetallePartido")'><button type="button">Ver Detalles</button></a>
-        </div>
-
-        <div class="hojaFede">
-            <h2>Zurbanismo</h2>
-            <img src="">
-            <p></p>
-            <a href='@Url.Action("VerDetallePartido")'><button type="button">Ver Detalles</button></a>
-        </div>
+    @for (int i = 0; i < ViewBag.Partidos.Count; i++)
+        {
+        <div class = "conteiner"> 
+            <div class="card">
+                <p>@ViewBag.Partidos[i].Nombre</p>
+                <img src="~/img/@ViewBag.Partidos[i].Logo">
+                <a href='@Url.Action("VerDetallePartido", "Home", "@ViewBag.Partidos[i].idPartido")'>Ver detalles</a>
+            </div>
+        </div> 
+        }
     </div>
 </body>
 </html>
